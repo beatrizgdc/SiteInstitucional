@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Arquivo HTML que exibe um currículo pessoal -->
+
   <head>
     <meta charset="UTF-8">
     <title>Curriculum Vitae</title>
+      <!-- Estilos CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
+      <!-- Scripts JS -->
     <script src="arquivo.js"></script>
   </head>
-  <body>
 
+  <body>
+    
+    <!-- Cabeçalho da página -->
     <header>
+      <!-- Menu de navegação -->
       <nav>
   <div class="nav-left">
     <a href="#">Seu Nome</a>
@@ -29,55 +37,59 @@
      
     </header>
 
-    <section>
 
+
+    <!-- botão de contato -->
+    <div class="botoes-fixo">
+  <a href="https://www.gmail.com" target="_blank"><img src="https://www.seusite.com.br/img/gmail.png" alt="Gmail"></a>
+  <a href="https://www.github.com" target="_blank"><img src="https://www.seusite.com.br/img/github.png" alt="Github"></a>
+  <a href="https://www.linkedin.com" target="_blank"><img src="https://www.seusite.com.br/img/linkedin.png" alt="Linkedin"></a>
+</div>
+
+
+      <!-- Seção "Sobre Mim" -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Texto sobre mim e minha experiência profissional.</p>
        <h1>Seu Nome</h1>
       <p>Idade: 20 anos</p>
       <p>Sexo: Masculino</p>
       <p>Endereço: Rua Tal, Número Tal, Cidade/Estado</p>
 
-     
-
-  
+     </section>
 <div class="slider">
-  <div class="slides">
-    <div class="slide">
-      <h2>Título da seção 1</h2>
-      <img src="https://via.placeholder.com/300x200" alt="Imagem da seção 1">
-      <p>Descrição da seção 1</p>
-      <a href="#">Link da seção 1</a>
-    </div>
-    <div class="slide">
-      <h2>Título da seção 2</h2>
-      <img src="https://via.placeholder.com/300x200" alt="Imagem da seção 2">
-      <p>Descrição da seção 2</p>
-      <a href="#">Link da seção 2</a>
-    </div>
-    <div class="slide">
-      <h2>Título da seção 3</h2>
-      <img src="https://via.placeholder.com/300x200" alt="Imagem da seção 3">
-      <p>Descrição da seção 3</p>
-      <a href="#">Link da seção 3</a>
-    </div>
-    <div class="slide">
-      <h2>Título da seção 4</h2>
-      <img src="https://via.placeholder.com/300x200" alt="Imagem da seção 4">
-      <p>Descrição da seção 4</p>
-      <a href="#">Link da seção 4</a>
-    </div>
-    <div class="slide">
-      <h2>Título da seção 5</h2>
-      <img src="https://via.placeholder.com/300x200" alt="Imagem da seção 5">
-      <p>Descrição da seção 5</p>
-      <a href="#">Link da seção 5</a>
+  <div class="slide active" style="background-image: url(./img/slide1.jpg)">
+    <div class="container">
+      <div class="caption">
+        <h2>Slide 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
     </div>
   </div>
-  
+  <div class="slide" style="background-image: url(./img/slide2.jpg)">
+    <div class="container">
+      <div class="caption">
+        <h2>Slide 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url(./img/slide3.jpg)">
+    <div class="container">
+      <div class="caption">
+        <h2>Slide 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 
 
+
+      <!-- Seção "Formação Acadêmica" -->
+      <section>
       <h2>Formação Acadêmica</h2>
       <ul>
         <li>Curso 1 - Instituição - Conclusão: mês/ano</li>
@@ -86,7 +98,7 @@
       </ul>
     </section>
 
-
+      <!-- Seção "Cursos Complementares" -->
     <section>
       <h2>Cursos Complementares</h2>
       <ul>
@@ -95,6 +107,8 @@
         <li>Curso 3 - Instituição - Conclusão: mês/ano</li>
       </ul>
     </section>
+
+     <!-- Seção "Redes Sociais" -->
     <section>
       <h2>Redes Sociais</h2>
       <ul>
@@ -102,10 +116,9 @@
         <li><a href="https://www.twitter.com/">Twitter</a></li>
         <li><a href="https://www.github.com/">GitHub</a></li>
       </ul>
-
-
     </section>
 
+    <!-- Seção "Projetos" -->
     <section>
       <h2>Projetos</h2>
       <ul>
@@ -115,6 +128,7 @@
       </ul>
     </section>
 
+     <!-- Seção "Habilidades" -->
     <section id="skills">
         <h2>Habilidades</h2>
         <article>
@@ -137,6 +151,7 @@
         </article>
       </section>
 
+     <!-- Seção "Experiência" -->
      <section id="experience">
         <h2>Experiência Profissional</h2>
         <article>
@@ -160,7 +175,13 @@
 
 
     <footer>
-      <p>© Seu Nome, 2023</p>
+       <!-- Seção "Contato" -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <ul>
+            <li>Email: seuemail@provedor.com</li>
+            <li>Telefone: (00) 0000-0000</li>
+           
     </footer>
   </body>
 </html>
