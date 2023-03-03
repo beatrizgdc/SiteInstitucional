@@ -16,27 +16,32 @@ btnShowMore.addEventListener('click', function() {
     // oculta o conteúdo
     hiddenContent.style.display = 'none';
     // altera o texto do botão
-    btnShowMore.textContent = 'Mostrar mais';
+   /* Arquivo JavaScript que adiciona animações ao currículo */
 
-     }
-});
-   const slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+/* Adiciona animação à seção "Experiência" */
+var secaoExperiencia = document.getElementById('experiencia');
+if (secaoExperiencia) {
+    secaoExperiencia.addEventListener('animationstart', function() {
+        console.log('Animação de experiência começou.');
+    });
 
-let counter = 0;
-const slideWidth = slides[0].clientWidth;
+    secaoExperiencia.addEventListener('animationend', function() {
+        console.log('Animação de experiência terminou.');
+    });
 
-// ajusta a posição inicial dos slides
-slides.forEach((slide, index) => {
-  slide.style.left = `${index * 100}%`;
-});
+    secaoExperiencia.classList.add('animated', 'fadeInUp');
+}
 
-// função para mover os slides
-const moveSlides = (amount) => {
-  counter += amount;
-  slides.forEach((slide) => {
-    slide.style.transform = `translateX(-${counter * slideWidth}px)`;
-  });
- 
- 
+/* Adiciona animação à seção "Educação" */
+var secaoEducacao = document.getElementById('educacao');
+if (secaoEducacao) {
+    secaoEducacao.addEventListener('animationstart', function() {
+        console.log('Animação de educação começou.');
+    });
+
+    secaoEducacao.addEventListener('animationend', function() {
+        console.log('Animação de educação terminou.');
+    });
+
+    secaoEducacao.classList.add('animated', 'fadeInUp');
+
